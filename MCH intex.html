@@ -1,0 +1,125 @@
+<!-- -->
+
+<!DOCTYPE html> <!--deklaracja rodzaju dokumentu-->
+<html> <!--otacza cały dokument, nadrządny; rozpoczyna główną zawartość dokumentu-->
+
+	<head> <!--nagłówek dokumentu, ważne dla działania, ale nie jest treścią strony;
+	odnośniki do akruszy stylów css-->
+		 <meta charset="utf-8"> <!--standardowe kodowanie, nie ma elementu zamykającego-->
+		
+		<title>druga strona</title>
+		
+		<link rel="stylesheet" href="MCH style.css"> <!--podłączenie pliku css-->
+		<script src="jquery.js"></script>
+		<script src="MCH scripts.js"></script>
+	</head>
+	<body><!--treść dokumentu-->
+	
+<!--Nagłówek strony-->
+	<header class="top"> <!--elementy nawigacyjne-->
+		<div class="container"> <!--nie posiada wyglądu, dopóki go nie ostylujemy-->
+			<div class="logo">
+				<a href="MCH intex.html">LOGO</a> <!--a obejmuje fragment tekstu-->
+			</div>
+			<div class="main-menu">
+				<ul>
+					<li><a href="MCH intex.html">Start</a></li>
+					<li><a href="MCH intex.html">Oferta</a></li>
+					<li><a href="MCH intex.html">Promocje</a></li>
+					<li><a href="MCH intex.html">Kontakt</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	
+<!--Banner-->
+	<section class="banner">
+		<div class="container center-text">
+			<h1>Najlepsza restauracja <br>
+			w mieście</h1>
+			<p>lorem ipsum dolor sit amet</p>
+			<a href="MCH intex.html" class="button button-light">Sprawdź menu</a>
+		</div>
+	</section>
+	
+<!--zalety oferty-->
+	<section class="intro">
+		<div class="container">
+			<h2 class="center-text">Dlaczego warto nas wybrać</h2>
+			<div class="col-one-third center-text">
+				<img src="img\ikona_1.png" alt="ikona_1">
+				<h3>Najlepsze jedzenie</h3>
+				<p>lorem ipsum dolor sit amet</p>
+			</div>
+				
+			<div class="col-one-third center-text">
+				<img src="img\ikona_2.png" alt="ikona_1">
+				<h3>Światowej klasy kucharze</h3>
+				<p>lorem ipsum dolor sit amet</p>
+			</div>
+				
+			<div class="col-one-third center-text">
+				<img src="img\ikona_3.png" alt="ikona_1">
+				<h3>Organizacja imprez</h3>
+				<p>lorem ipsum dolor sit amet</p>
+			</div>
+			
+		</div>
+	</section>
+		
+<!--Promocje-->	
+	<section class="promo">
+		<div class="container">
+			<div class="col-half">
+			<img src="img/dekor.png" alt="Dekor"> <!--samozamykający-->
+			</div>
+		
+			<div class="col-half">
+				<h2>Skorzystaj z naszych promocji</h2>
+				<p>Lorem Ipsum dolor sit amet</p>
+			</div>
+		</div>
+	</section>
+	
+<!--Kontakt-->
+	<section class="contact">
+			<div class="container"> <!--lewa kolumna-->
+			<h2 class="center-text">Skontaktuj się z nami</h2>
+			<div class="col-half">
+				<form action=""> <!--po action informacja, gdzie beda wysyłane dane/przetwarzane-->
+					<label for="Imię"><strong>Imię i nazwisko</strong></label> <br><!--etykieta pola; for- dla jakiego pola etykieta przeznaczona-->
+					<input type="text" name="Imię" id="name"><br> <!--jedno pole tekstowe; input jest samozamykający-->
+					
+					<label for="email"><strong>Email</strong></label><br>
+					<input type="text" name="email" id="email"><br>
+					
+					<label for="password"><strong>Hasło</strong></label><br>
+					<input type="text" name="password" id="password"><br>
+					
+					<button type="submit" class="button button-dark" id="login">Zaloguj</button><br> <!--przycisk przesyłania formularza-->
+				</form>
+			</div> 
+			
+			<div class="col-half" id="contact-right"> <!--prawa kolumna-->
+				<h4>Znajdź nas</h4>
+				<img src="img/mapa.jpg" alt="Mapa">
+			</div>
+		</div>
+	</section>
+
+		
+	
+<!--Stopka strony-->
+<footer class="site-footer">
+	<div class="container">
+		<p>&copy; Yapok 2019</p>
+	</div>
+</footer>	
+		
+		
+	</body>
+
+
+
+
+</html>
